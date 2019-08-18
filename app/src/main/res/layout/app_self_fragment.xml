@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#EDEDED"
+              android:layout_marginTop="30dp"
+              android:orientation="vertical">
+
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:id="@+id/rl_self_details"
+                    android:background="#FAFAFA">
+
+        <com.mredrock.cyxbs.freshman.weight.AppShawdowLayout android:layout_width="wrap_content"
+                                                             android:layout_height="wrap_content"
+                                                             android:layout_marginStart="20dp"
+                                                             app:app_round_corner="30dp"
+                                                             android:id="@+id/sl_self"
+                                                             android:layout_centerVertical="true">
+            <ImageView android:layout_width="60dp"
+                       android:layout_height="60dp"
+                       android:background="@drawable/rice"
+                       android:scaleType="centerCrop"
+                       android:id="@+id/iv_self_change_image"/>
+
+
+        </com.mredrock.cyxbs.freshman.weight.AppShawdowLayout>
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginStart="20dp"
+                  android:textSize="22sp"
+                  android:layout_marginTop="20dp"
+                  android:textStyle="bold"
+                  android:layout_toEndOf="@id/sl_self"
+                  android:id="@+id/tv_self_name"
+                  android:textColor="#000000"
+                  android:text="@string/app_set_name"/>
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/tv_self_detail"
+                  android:text="@string/app_introduce"
+                  android:layout_toEndOf="@id/sl_self"
+                  android:lines="2"
+                  android:maxLength="200"
+                  android:ellipsize="end"
+                  android:layout_marginStart="20dp"
+                  android:layout_marginEnd="35dp"
+                  android:layout_marginTop="60dp"/>
+
+        <ImageView android:layout_width="15dp"
+                   android:layout_height="15dp"
+                   android:layout_alignParentEnd="true"
+                   android:layout_marginEnd="10dp"
+                   android:layout_centerVertical="true"
+                   android:background="@drawable/nexxt"/>
+    </RelativeLayout>
+
+    <View android:layout_width="match_parent"
+          android:layout_height="1px"
+          android:background="#E9E9E9"/>
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/rl_self_makeof"
+                    android:background="#FAFAFA">
+
+        <ImageView android:layout_width="30dp"
+                   android:layout_height="30dp"
+                   android:layout_gravity="center_vertical"
+                   android:id="@+id/iv_self_makeof"
+                   android:layout_marginStart="20dp"
+                   android:layout_centerVertical="true"
+                   android:background="@drawable/makeof"/>
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginStart="20dp"
+                  android:layout_gravity="center_vertical"
+                  android:textSize="16sp"
+                  android:textColor="#000000"
+                  android:id="@+id/tv_self_makeof"
+                  android:layout_toEndOf="@id/iv_self_makeof"
+                  android:layout_centerVertical="true"
+                  android:text="@string/app_makeof"/>
+
+        <ImageView android:layout_width="15dp"
+                   android:layout_height="15dp"
+                   android:layout_alignParentEnd="true"
+                   android:layout_marginEnd="10dp"
+                   android:layout_centerVertical="true"
+                   android:layout_gravity="center_vertical"
+                   android:background="@drawable/nexxt"/>
+    </RelativeLayout>
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/rl_self_like"
+                    android:background="#FAFAFA">
+
+        <ImageView android:layout_width="30dp"
+                   android:layout_height="30dp"
+                   android:layout_gravity="center_vertical"
+                   android:id="@+id/iv_self_like"
+                   android:layout_marginStart="20dp"
+                   android:layout_centerVertical="true"
+                   android:background="@drawable/like"/>
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginStart="20dp"
+                  android:layout_gravity="center_vertical"
+                  android:textSize="16sp"
+                  android:textColor="#000000"
+                  android:id="@+id/tv_self_like"
+                  android:layout_toEndOf="@id/iv_self_like"
+                  android:layout_centerVertical="true"
+                  android:text="@string/app_like"/>
+
+        <ImageView android:layout_width="15dp"
+                   android:layout_height="15dp"
+                   android:layout_alignParentEnd="true"
+                   android:layout_marginEnd="10dp"
+                   android:layout_centerVertical="true"
+                   android:layout_gravity="center_vertical"
+                   android:background="@drawable/nexxt"/>
+    </RelativeLayout>
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/rl_self_past"
+                    android:background="#FAFAFA">
+
+        <ImageView android:layout_width="30dp"
+                   android:layout_height="30dp"
+                   android:layout_gravity="center_vertical"
+                   android:id="@+id/iv_self_past"
+                   android:layout_marginStart="20dp"
+                   android:layout_centerVertical="true"
+                   android:background="@drawable/past"/>
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginStart="20dp"
+                  android:layout_gravity="center_vertical"
+                  android:textSize="16sp"
+                  android:textColor="#000000"
+                  android:id="@+id/tv_self_past"
+                  android:layout_toEndOf="@id/iv_self_past"
+                  android:layout_centerVertical="true"
+                  android:text="@string/app_past"/>
+
+        <ImageView android:layout_width="15dp"
+                   android:layout_height="15dp"
+                   android:layout_alignParentEnd="true"
+                   android:layout_marginEnd="10dp"
+                   android:layout_centerVertical="true"
+                   android:layout_gravity="center_vertical"
+                   android:background="@drawable/nexxt"/>
+    </RelativeLayout>
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="40dp"
+                    android:id="@+id/rl_self_delete"
+                    android:background="#FAFAFA">
+
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginStart="20dp"
+                  android:layout_gravity="center_vertical"
+                  android:textSize="16sp"
+                  android:textColor="#DC143C"
+                  android:id="@+id/tv_self_delete"
+                  android:layout_centerHorizontal="true"
+                  android:layout_centerVertical="true"
+                  android:text="@string/app_delete"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

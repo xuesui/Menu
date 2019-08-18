@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:background="#FFFACD"
+        tools:context=".ui.fragment.TelephoneFragment">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/ll_tele_login"
+                  android:layout_marginTop="60dp"
+                  android:orientation="vertical">
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@string/app_tele_number"
+                  android:textColor="#4B4556"
+                  android:textStyle="bold"
+                  android:layout_marginStart="80dp"
+                  android:layout_marginTop="20dp"
+                  android:textSize="18sp"/>
+
+        <com.mredrock.cyxbs.freshman.weight.AppShawdowLayout android:layout_width="320dp"
+                                                             android:layout_height="45dp"
+                                                             app:app_round_corner="45dp"
+                                                             app:app_shadow_width="2dp"
+                                                             android:layout_marginTop="10dp"
+                                                             app:app_clip_background="true"
+                                                             app:app_shadow_color="#4B4556"
+                                                             android:layout_gravity="center_horizontal">
+
+            <EditText android:layout_width="260dp"
+                      android:layout_height="40dp"
+                      android:hint="@string/app_write_telenumber"
+                      android:id="@+id/et_tele_login"
+                      android:layout_gravity="center_vertical"
+                      android:layout_marginStart="20dp"
+                      android:background="@null"
+                      android:maxLength="23"
+                      android:singleLine="true"
+                      android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                      android:inputType="number"
+                      android:textSize="18sp"/>
+
+            <com.mredrock.cyxbs.freshman.weight.AppChooseView android:layout_width="match_parent"
+                                                              android:layout_marginStart="280dp"
+                                                              android:visibility="invisible"
+                                                              android:id="@+id/tele_cv_login"
+                                                              android:layout_gravity="center_vertical"
+                                                              android:layout_height="30dp"/>
+
+        </com.mredrock.cyxbs.freshman.weight.AppShawdowLayout>
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@string/app_define"
+                  android:textColor="#4B4556"
+                  android:textStyle="bold"
+                  android:layout_marginStart="80dp"
+                  android:layout_marginTop="20dp"
+                  android:textSize="18sp"/>
+
+        <com.mredrock.cyxbs.freshman.weight.AppShawdowLayout android:layout_width="320dp"
+                                                             android:layout_height="45dp"
+                                                             app:app_round_corner="45dp"
+                                                             app:app_shadow_width="2dp"
+                                                             android:layout_marginTop="10dp"
+                                                             app:app_clip_background="true"
+                                                             app:app_shadow_color="#4B4556"
+                                                             android:layout_gravity="center_horizontal">
+
+            <EditText android:layout_width="200dp"
+                      android:layout_height="40dp"
+                      android:hint="@string/app_write_define"
+                      android:id="@+id/et_define_login"
+                      android:layout_gravity="center_vertical"
+                      android:layout_marginStart="20dp"
+                      android:background="@null"
+                      android:maxLength="23"
+                      android:singleLine="true"
+                      android:textSize="18sp"
+                      android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                      android:inputType="number"/>
+
+
+            <com.mredrock.cyxbs.freshman.weight.AppShawdowLayout android:layout_width="match_parent"
+                                                                 android:layout_marginStart="225dp"
+                                                                 android:layout_marginEnd="15dp"
+                                                                 android:layout_gravity="center_vertical"
+                                                                 app:app_round_corner="90dp"
+                                                                 app:app_shadow_width="1px"
+                                                                 app:app_shadow_color="#808080"
+                                                                 android:id="@+id/sl_send_define_login"
+                                                                 android:layout_height="28dp">
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="@string/app_send_define"
+                          android:textColor="#000000"
+                          android:id="@+id/tv_send_define_login"
+                          android:layout_gravity="center"/>
+
+            </com.mredrock.cyxbs.freshman.weight.AppShawdowLayout>
+
+        </com.mredrock.cyxbs.freshman.weight.AppShawdowLayout>
+
+
+        <com.mredrock.cyxbs.freshman.weight.AppShawdowLayout android:layout_width="200dp"
+                                                             android:layout_height="60dp"
+                                                             app:app_round_corner="45dp"
+                                                             app:app_shadow_width="2dp"
+                                                             android:layout_marginTop="60dp"
+                                                             android:id="@+id/asv_tele_login"
+                                                             app:app_clip_background="true"
+                                                             app:app_shadow_color="#4B4556"
+                                                             android:layout_gravity="center_horizontal">
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center"
+                      android:text="@string/app_define_login"
+                      android:textSize="22sp"/>
+        </com.mredrock.cyxbs.freshman.weight.AppShawdowLayout>
+    </LinearLayout>
+
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_below="@id/ll_tele_login"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="match_parent">
+
+        <ImageView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/iv_food"
+                   android:background="@drawable/food"/>
+
+        <ImageView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:background="@drawable/knife"
+                   android:layout_centerVertical="true"
+                   android:layout_centerHorizontal="true"
+                   android:layout_gravity="center"/>
+
+        <ImageView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/meat"
+                   android:background="@drawable/meat"
+                   android:layout_alignParentEnd="true"/>
+
+        <ImageView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/vegetable"
+                   android:background="@drawable/vegetable"
+                   android:layout_alignParentBottom="true"
+                   android:layout_alignParentStart="true"/>
+
+        <ImageView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/fruit"
+                   android:background="@drawable/fruit"
+                   android:layout_alignParentBottom="true"
+                   android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+
+</RelativeLayout>

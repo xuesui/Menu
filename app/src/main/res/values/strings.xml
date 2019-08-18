@@ -1,3 +1,37 @@
 <resources>
     <string name="app_name">CyxbsMobile_Freshman</string>
+    <string name="app_activity_flash_start">开启掌厨</string>
+    <string name="app_sign_up">注册</string>
+    <string name="app_log_in">登录</string>
+    <string name="app_account">账号</string>
+    <string name="app_write_account">请输入你的账号</string>
+    <string name="app_code">密码</string>
+    <string name="app_write_code">请输入你的密码</string>
+    <string name="app_to_signup">还没有账号？点击注册</string>
+    <string name="app_other_logup">其他方式</string>
+    <string name="app_login_telephone">手机号注册</string>
+    <string name="app_or">or</string>
+    <string name="app_login_teleohone">手机号登陆</string>
+    <string name="app_tele_number">手机号</string>
+    <string name="app_write_telenumber">请输入你的手机号</string>
+    <string name="app_define">验证码</string>
+    <string name="app_write_define">请输入验证码</string>
+    <string name="app_send_define">发送验证码</string>
+    <string name="app_define_logup">注 册</string>
+    <string name="app_define_login">登录</string>
+    <string name="app_makeof">作品</string>
+    <string name="app_past">历史足迹</string>
+    <string name="app_like">收藏</string>
+    <string name="app_introduce">亲!给自己添加一下个人介绍吧～～</string>
+    <string name="app_delete">退出登录</string>
+    <string name="app_set_name">还未设置名字哦</string>
+    <string name="app_image">头像</string>
+    <string name="app_setting">个人信息</string>
+    <string name="app_setting_name">昵称</string>
+    <string name="app_setting_introduce">个人介绍</string>
+    <string name="app_nickname">昵称</string>
+    <string name="app_complete">完成</string>
+    <string name="app_write_nickname">请输入昵称</string>
+    <string name="app_self_introduce">个人介绍</string>
+    <string name="app__200">200字以内</string>
 </resources>

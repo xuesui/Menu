@@ -1,6 +1,7 @@
 package com.mredrock.cyxbs.common.ui
 
 import android.app.ProgressDialog
+import android.content.Intent
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
@@ -65,4 +66,5 @@ abstract class BaseViewModelActivity<T : BaseViewModel> : BaseActivity() {
             progressDialog?.dismiss()
         }
     }
+
 }
