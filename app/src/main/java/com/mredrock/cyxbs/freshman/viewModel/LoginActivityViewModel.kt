@@ -6,7 +6,7 @@ import android.view.View
 import androidx.fragment.app.Fragment
 import com.mredrock.cyxbs.common.viewmodel.BaseViewModel
 import com.mredrock.cyxbs.freshman.ui.activity.LoginActivity
-import com.mredrock.cyxbs.freshman.adapter.FragmentAdapter
+import com.mredrock.cyxbs.freshman.utils.FragmentAdapter
 import com.mredrock.cyxbs.freshman.ui.fragment.LoginFragment
 import com.mredrock.cyxbs.freshman.ui.fragment.LogupFragment
 import kotlinx.android.synthetic.main.app_activity_login.*

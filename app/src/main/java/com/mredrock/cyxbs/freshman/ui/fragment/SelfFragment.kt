@@ -24,7 +24,6 @@ class SelfFragment : BaseViewModelFragment<SelfViewModel>() {
     }
 
 
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -48,25 +47,32 @@ class SelfFragment : BaseViewModelFragment<SelfViewModel>() {
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
-        if (viewModel!= null){
-            viewModel.fromphotoalbum(this,requestCode,resultCode,data!!)
+        if (viewModel != null) {
+            viewModel.fromphotoalbum(this, requestCode, resultCode, data!!)
         }
     }
 
 
     override fun onResume() {
-        val preference1=activity!!.getSharedPreferences("nickname", Context.MODE_PRIVATE)
-        val name=preference1.getString("name","")
-        tv_self_name.setText(name)
+        val preference1 = activity!!.getSharedPreferences("nickname", Context.MODE_PRIVATE)
+        val name = preference1.getString("name", "")
+        if (name != null && name != "") {
+            tv_self_name.setText(name)
+        }
 
-        val preference2=activity!!.getSharedPreferences("selfimage", Context.MODE_PRIVATE)
-        val path=preference2.getString("path","")
-        val bitmap=BitmapFactory.decodeFile(path)
+
+        val preference2 = activity!!.getSharedPreferences("selfimage", Context.MODE_PRIVATE)
+        val path = preference2.getString("path", "")
+        val bitmap = BitmapFactory.decodeFile(path)
         iv_self_change_image.setImageBitmap(bitmap)
 
-        val preference3=activity!!.getSharedPreferences("introduce", Context.MODE_PRIVATE)
-        val content=preference3.getString("content","")
-        tv_self_detail.setText(content)
+
+        val preference3 = activity!!.getSharedPreferences("introduce", Context.MODE_PRIVATE)
+        val content = preference3.getString("content", "")
+        if (content != null && content != "") {
+            tv_self_detail.setText(content)
+        }
+
         super.onResume()
     }
 

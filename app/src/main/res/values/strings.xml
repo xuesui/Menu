@@ -34,4 +34,22 @@
     <string name="app_write_nickname">请输入昵称</string>
     <string name="app_self_introduce">个人介绍</string>
     <string name="app__200">200字以内</string>
+    <string name="app_search">试试搜索想要的菜谱</string>
+    <string name="app_daily_recommand">今日推荐</string>
+    <string name="app_mian_more">更多推荐</string>
+    <string name="app_recommand">吃货种草机</string>
+    <string name="app_more_recommand">更多种草场景</string>
+    <string name="app_big_meat">肉的盛宴</string>
+    <string name="app_eat_meat">就要吃肉</string>
+    <string name="app_snacks">特色小吃</string>
+    <string name="app_once_eat">一口一个</string>
+    <string name="app_way">做法</string>
+    <string name="app_source">酱汁特色</string>
+    <string name="app_dousha">豆沙</string>
+    <string name="app_tian">甜味回忆</string>
+    <string name="app_sichuan">入川必吃</string>
+    <string name="app_chuanwei">川味</string>
+    <string name="app_zhushi">主食</string>
+    <string name="app_mifen">寻味米粉</string>
+    <string name="app_cook">为爱掌厨，用心做顿好饭</string>
 </resources>
