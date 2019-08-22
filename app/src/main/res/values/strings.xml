@@ -52,4 +52,15 @@
     <string name="app_zhushi">主食</string>
     <string name="app_mifen">寻味米粉</string>
     <string name="app_cook">为爱掌厨，用心做顿好饭</string>
+    <string name="app_how">做法</string>
+    <string name="app_from">食材</string>
+    <string name="app_content">相关内容</string>
+    <string name="app_prepare">准备时间</string>
+    <string name="app_cook_cook">制作时间</string>
+    <string name="app_people">适合人数</string>
+    <string name="app_detail_inroduce">厨师介绍</string>
+    <string name="app_tag">标签</string>
+    <string name="app_star">我的收藏</string>
+    <string name="app_search_foryou">为你找到</string>
+    <string name="app_s">搜索</string>
 </resources>

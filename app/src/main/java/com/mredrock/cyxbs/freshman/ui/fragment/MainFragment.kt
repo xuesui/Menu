@@ -44,12 +44,14 @@ class MainFragment : BaseViewModelFragment<MainViewModel>() {
         viewModel.initRecyclerView(this)
 
         val id1=random.nextInt(56383)
-        viewModel.initDaily(this,id1)
-
+        viewModel.initDaily(this,id1,1)
+        viewModel.todetail(this,id1,1)
         val id2=random.nextInt(56383)
-        viewModel.initDaily(this,id2)
-
+        viewModel.initDaily(this,id2,2)
+        viewModel.todetail(this,id2,2)
         viewModel.refresh(this)
+        viewModel.search(this)
+        viewModel.toMoreRecommand(this)
     }
 
 }

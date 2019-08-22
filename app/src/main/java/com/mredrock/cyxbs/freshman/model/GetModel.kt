@@ -7,6 +7,6 @@ interface GetModel {
     //分类
     fun requestClassify(fragment: MainFragment)
 
-    fun requestId(fragment: MainFragment,id:Int)
+    fun requestId(fragment: MainFragment,id:Int,which:Int)
 
 }
