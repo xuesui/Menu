@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:background="@color/app_login_background">
+
+    <com.mredrock.cyxbs.freshman.weight.AppShawdowLayout android:layout_width="80dp"
+                                                         app:app_clip_background="true"
+                                                         app:app_round_corner="30dp"
+                                                         android:layout_alignParentEnd="true"
+                                                         android:layout_marginTop="30dp"
+                                                         android:layout_marginEnd="15dp"
+                                                         android:id="@+id/shawdow_1"
+                                                         android:layout_height="25dp">
+    </com.mredrock.cyxbs.freshman.weight.AppShawdowLayout>
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/app_log_in"
+              android:id="@+id/tv_log_in"
+              android:layout_gravity="center"
+              android:textSize="18sp"
+              android:layout_marginEnd="35dp"
+              android:layout_alignParentEnd="true"
+              android:layout_below="@id/shawdow_1"
+              android:textColor="@color/app_login_text"/>
+
+    <com.mredrock.cyxbs.freshman.weight.AppShawdowLayout android:layout_width="80dp"
+                                                         app:app_clip_background="true"
+                                                         app:app_round_corner="30dp"
+                                                         android:layout_marginTop="30dp"
+                                                         android:layout_toStartOf="@id/shawdow_1"
+                                                         android:id="@+id/shawdow_2"
+                                                         android:layout_marginEnd="15dp"
+                                                         android:layout_height="25dp">
+
+    </com.mredrock.cyxbs.freshman.weight.AppShawdowLayout>
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/app_sign_up"
+              android:layout_gravity="center"
+              android:textSize="18sp"
+              android:id="@+id/tv_log_up"
+              android:layout_marginEnd="62dp"
+              android:layout_toStartOf="@id/tv_log_in"
+              android:layout_below="@id/shawdow_2"
+              android:textColor="@color/app_login_text"/>
+
+    <androidx.viewpager.widget.ViewPager android:layout_width="match_parent"
+                                         android:layout_height="match_parent"
+                                         android:id="@+id/vp_log_in"
+                                         android:layout_marginTop="10dp"
+                                         android:layout_below="@id/shawdow_1"/>
+</RelativeLayout>

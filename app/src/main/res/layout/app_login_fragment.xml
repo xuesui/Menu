@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent" android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <com.mredrock.cyxbs.freshman.weight.AppStrokeTextView android:layout_width="match_parent"
+                                                          app:app_text="Sign In"
+                                                          android:layout_height="150dp"/>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical">
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@string/app_account"
+                  android:textColor="#4B4556"
+                  android:textStyle="bold"
+                  android:layout_marginStart="80dp"
+                  android:layout_marginTop="20dp"
+                  android:textSize="18sp"/>
+
+        <com.mredrock.cyxbs.freshman.weight.AppShawdowLayout android:layout_width="320dp"
+                                                             android:layout_height="45dp"
+                                                             app:app_round_corner="45dp"
+                                                             app:app_shadow_width="2dp"
+                                                             android:layout_marginTop="10dp"
+                                                             app:app_clip_background="true"
+                                                             app:app_shadow_color="#4B4556"
+                                                             android:layout_gravity="center_horizontal">
+
+            <EditText android:layout_width="260dp"
+                      android:layout_height="40dp"
+                      android:hint="@string/app_write_account"
+                      android:id="@+id/et_account"
+                      android:layout_gravity="center_vertical"
+                      android:layout_marginStart="20dp"
+                      android:background="@null"
+                      android:maxLength="23"
+                      android:singleLine="true"
+                      android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                      android:inputType="number"
+                      android:textSize="18sp"/>
+
+            <com.mredrock.cyxbs.freshman.weight.AppChooseView android:layout_width="match_parent"
+                                                              android:layout_marginStart="280dp"
+                                                              android:visibility="invisible"
+                                                              android:id="@+id/account_cv"
+                                                              android:layout_gravity="center_vertical"
+                                                              android:layout_height="30dp"/>
+
+        </com.mredrock.cyxbs.freshman.weight.AppShawdowLayout>
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@string/app_code"
+                  android:textColor="#4B4556"
+                  android:textStyle="bold"
+                  android:layout_marginStart="80dp"
+                  android:layout_marginTop="20dp"
+                  android:textSize="18sp"/>
+
+        <com.mredrock.cyxbs.freshman.weight.AppShawdowLayout android:layout_width="320dp"
+                                                             android:layout_height="45dp"
+                                                             app:app_round_corner="45dp"
+                                                             app:app_shadow_width="2dp"
+                                                             android:layout_marginTop="10dp"
+                                                             app:app_clip_background="true"
+                                                             app:app_shadow_color="#4B4556"
+                                                             android:layout_gravity="center_horizontal">
+
+            <EditText android:layout_width="260dp"
+                      android:layout_height="40dp"
+                      android:hint="@string/app_write_code"
+                      android:id="@+id/et_code"
+                      android:layout_gravity="center_vertical"
+                      android:layout_marginStart="20dp"
+                      android:background="@null"
+                      android:maxLength="23"
+                      android:singleLine="true"
+                      android:textSize="18sp"
+                      android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                      android:inputType="number"/>
+
+
+            <com.mredrock.cyxbs.freshman.weight.AppChooseView android:layout_width="match_parent"
+                                                              android:layout_marginStart="280dp"
+                                                              android:layout_gravity="center_vertical"
+                                                              android:visibility="invisible"
+                                                              android:id="@+id/code_cv"
+                                                              android:layout_height="30dp"/>
+
+        </com.mredrock.cyxbs.freshman.weight.AppShawdowLayout>
+
+        <com.mredrock.cyxbs.freshman.weight.AppSignView android:layout_width="320dp"
+                                                        android:layout_marginTop="50dp"
+                                                        app:app_text_sign="Sign in"
+                                                        android:layout_gravity="center_horizontal"
+                                                        android:id="@+id/asv_loghin"
+                                                        android:layout_height="100dp"/>
+
+        <RelativeLayout android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+            <ImageView android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="40dp"
+                       android:id="@+id/iv_melon"
+                       android:background="@drawable/app_watermelon"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:textSize="18sp"
+                      android:text="@string/app_to_signup"
+                      android:layout_marginTop="60dp"
+                      android:layout_marginStart="20dp"
+                      android:layout_toRightOf="@id/iv_melon"
+                      android:id="@+id/tv_login_to_logup"
+                      android:layout_height="wrap_content"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_below="@id/tv_login_to_logup"
+                      android:layout_marginTop="20dp"
+                      android:layout_toRightOf="@id/iv_melon"
+                      android:layout_marginStart="95dp"
+                      android:textSize="18sp"
+                      android:text="@string/app_or"/>
+        </RelativeLayout>
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textSize="18sp"
+                  android:text="@string/app_login_teleohone"
+                  android:textColor="#0000CD"
+                  android:layout_marginTop="10dp"
+                  android:id="@+id/tv_login_telephone"
+                  android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+
+</LinearLayout>

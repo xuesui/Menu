@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="AppShawdowLayout">
+        <!--圆形-->
+        <attr name="app_round_as_circle" format="boolean" />
+        <!--全部圆角-->
+        <attr name="app_round_corner" format="integer|dimension" />
+        <!--分别圆角-->
+        <attr name="app_round_corner_top_left" format="integer|dimension" />
+        <attr name="app_round_corner_top_right" format="integer|dimension" />
+        <attr name="app_round_corner_bottom_left" format="integer|dimension" />
+        <attr name="app_round_corner_bottom_right" format="integer|dimension" />
+        <!--描边颜色／半径-->
+        <attr name="app_shadow_color" format="color|reference" />
+        <attr name="app_shadow_width" format="integer|dimension" />
+        <!-- 是否剪裁 RCLayout 的背景 -->
+        <attr name="app_clip_background" format="boolean" />
+
+    </declare-styleable>
+
+    <declare-styleable name="AppStrokeTextView">
+        <attr name="app_paint_color" format="integer"/>
+        <attr name="app_text" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="AppSignView">
+        <attr name="app_text_sign" format="string"/>
+    </declare-styleable>
+</resources>

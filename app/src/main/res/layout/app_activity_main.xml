@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:id="@+id/scroll_main_fragment"
+                  android:orientation="vertical"
+                  android:layout_above="@id/view">
+
+    </LinearLayout>
+    <View android:layout_width="match_parent"
+          android:layout_height="1px"
+          android:id="@+id/view"
+          android:background="#E9E9E9"
+          android:layout_above="@id/bnb_main"/>
+
+    <com.ashokvarma.bottomnavigation.BottomNavigationBar android:layout_width="match_parent"
+                                                         android:layout_height="wrap_content"
+                                                         android:id="@+id/bnb_main"
+                                                         android:layout_alignParentBottom="true"/>
+</RelativeLayout>
