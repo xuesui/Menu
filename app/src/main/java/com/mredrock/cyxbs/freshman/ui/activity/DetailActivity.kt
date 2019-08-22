@@ -11,6 +11,7 @@ import android.widget.TableLayout
 import com.google.android.material.tabs.TabLayout
 import com.mredrock.cyxbs.common.ui.BaseViewModelActivity
 import com.mredrock.cyxbs.freshman.R
+import com.mredrock.cyxbs.freshman.litepal.Past
 import com.mredrock.cyxbs.freshman.viewModel.DetailActivityViewModel
 import kotlinx.android.synthetic.main.app_activity_detail.*
 import kotlinx.android.synthetic.main.app_activity_main.*
@@ -31,15 +32,21 @@ class DetailActivity : BaseViewModelActivity<DetailActivityViewModel>(){
         }
         detail_collapsing_toolbar.setCollapsedTitleTextColor(Color.parseColor("#404040"))
         viewModel.initViewPager(this)
-        val mId=intent.extras.getInt("id")
-        viewModel.requestId(this,mId)
-        float_detail.setOnClickListener {
-            val intent=Intent(this,StarActivity::class.java)
-            val bundle=Bundle()
-            bundle.putInt("id",mId)
-            intent.putExtras(bundle)
-            startActivity(intent)
+        val mId=intent.extras?.getInt("id")
+        if (mId!=null&&mId!=0){
+            val past=Past()
+            past.past=mId
+            past.save()
+            viewModel.requestId(this,mId)
+            float_detail.setOnClickListener {
+                val intent=Intent(this,StarActivity::class.java)
+                val bundle=Bundle()
+                bundle.putInt("id",mId)
+                intent.putExtras(bundle)
+                startActivity(intent)
+            }
         }
+
     }
 
 }

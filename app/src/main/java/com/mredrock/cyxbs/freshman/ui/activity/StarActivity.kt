@@ -20,9 +20,10 @@ class StarActivity : BaseViewModelActivity<StarActivityViewModel>() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.app_activity_star)
-        LitePal.getDatabase()
-        val mid = intent.extras.getInt("id")
-        viewModel.store(mid)
+        val mid = intent.extras?.getInt("id")
+        if (mid!=null&&mid!=0){
+            viewModel.store(mid)
+        }
         val stars = DataSupport.findAll(Star::class.java)
         for (i in 0 until stars.size) {
             ids.add(stars[i].which)

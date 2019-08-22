@@ -15,7 +15,7 @@ class StarActivityViewModel :BaseViewModel(){
 
     fun store(id:Int){
         val star= Star()
-        star.setWhich(id)
+        star.which = id
         star.save()
     }
 }

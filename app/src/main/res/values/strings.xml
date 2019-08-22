@@ -63,4 +63,5 @@
     <string name="app_star">我的收藏</string>
     <string name="app_search_foryou">为你找到</string>
     <string name="app_s">搜索</string>
+    <string name="app_deletepast">清空足迹</string>
 </resources>

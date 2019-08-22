@@ -1,6 +1,7 @@
 package com.mredrock.cyxbs.freshman.viewModel
 
 import com.mredrock.cyxbs.common.viewmodel.BaseViewModel
+import com.mredrock.cyxbs.freshman.R
 import com.mredrock.cyxbs.freshman.model.MoreModel
 import com.mredrock.cyxbs.freshman.ui.activity.MoreRecommandActivity
 import kotlinx.android.synthetic.main.app_activity_more_recommand.*
@@ -20,5 +21,9 @@ class MoreRecommandActivityViewModel : BaseViewModel() {
 
     fun initRecyclerView(activity: MoreRecommandActivity) {
         model.moreRecommand(activity)
+    }
+
+    fun initMore(activity: MoreRecommandActivity,food:String){
+        model.more(activity,food)
     }
 }

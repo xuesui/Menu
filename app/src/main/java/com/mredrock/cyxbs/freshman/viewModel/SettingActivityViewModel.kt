@@ -42,4 +42,5 @@ class SettingActivityViewModel : BaseViewModel() {
             activity.startActivity(intent)
         }
     }
+
 }

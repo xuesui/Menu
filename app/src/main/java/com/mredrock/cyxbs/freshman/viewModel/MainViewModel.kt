@@ -137,5 +137,67 @@ class MainViewModel : BaseViewModel() {
             intent.putExtras(bundle)
             fragment.startActivity(intent)
         }
+
+        fragment.main_grass_card1.setOnClickListener {
+            val intent=Intent(fragment.context,MoreRecommandActivity::class.java)
+            val bundle=Bundle()
+            bundle.putString("title","肉的盛宴")
+            bundle.putString("food","肉")
+            bundle.putInt("imagepic",R.drawable.redmeat)
+            intent.putExtras(bundle)
+            fragment.startActivity(intent)
+        }
+
+        fragment.main_grass_card2.setOnClickListener {
+            val intent=Intent(fragment.context,MoreRecommandActivity::class.java)
+            val bundle=Bundle()
+            bundle.putString("title","特色小吃")
+            bundle.putString("food","小吃")
+            bundle.putInt("imagepic",R.drawable.snacks)
+            intent.putExtras(bundle)
+            fragment.startActivity(intent)
+        }
+
+        fragment.main_source_card.setOnClickListener{
+            val intent=Intent(fragment.context,MoreRecommandActivity::class.java)
+            val bundle=Bundle()
+            bundle.putString("title","酱汁特色")
+            bundle.putString("food","酱汁")
+            bundle.putInt("imagepic",R.drawable.source)
+            intent.putExtras(bundle)
+            fragment.startActivity(intent)
+        }
+
+        fragment.main_mifen_card.setOnClickListener{
+            val intent=Intent(fragment.context,MoreRecommandActivity::class.java)
+            val bundle=Bundle()
+            bundle.putString("title","寻味米粉")
+            bundle.putString("food","米粉")
+            bundle.putInt("imagepic",R.drawable.mifen)
+            intent.putExtras(bundle)
+            fragment.startActivity(intent)
+        }
+
+        fragment.main_sichuan_card.setOnClickListener{
+            val intent=Intent(fragment.context,MoreRecommandActivity::class.java)
+            val bundle=Bundle()
+            bundle.putString("title","入川必吃")
+            bundle.putString("food","四川")
+            bundle.putInt("imagepic",R.drawable.sichuan)
+            intent.putExtras(bundle)
+            fragment.startActivity(intent)
+        }
+
+        fragment.main_dousha_card.setOnClickListener{
+            val intent=Intent(fragment.context,MoreRecommandActivity::class.java)
+            val bundle=Bundle()
+            bundle.putString("title","甜味回忆")
+            bundle.putString("food","豆沙")
+            bundle.putInt("imagepic",R.drawable.dousha)
+            intent.putExtras(bundle)
+            fragment.startActivity(intent)
+        }
     }
+
+
 }

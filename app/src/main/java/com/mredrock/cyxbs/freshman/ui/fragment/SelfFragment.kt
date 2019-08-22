@@ -12,6 +12,8 @@ import android.view.ViewGroup
 import com.mredrock.cyxbs.common.ui.BaseViewModelFragment
 
 import com.mredrock.cyxbs.freshman.R
+import com.mredrock.cyxbs.freshman.ui.activity.PastActivity
+import com.mredrock.cyxbs.freshman.ui.activity.StarActivity
 import com.mredrock.cyxbs.freshman.viewModel.SelfViewModel
 import kotlinx.android.synthetic.main.app_self_fragment.*
 
@@ -42,6 +44,14 @@ class SelfFragment : BaseViewModelFragment<SelfViewModel>() {
         viewModel.toSettings(this)
         viewModel.quitLogin(this)
         viewModel.changeImage(this)
+        rl_self_like.setOnClickListener {
+            val intent=Intent(activity,StarActivity::class.java)
+            startActivity(intent)
+        }
+        rl_self_past.setOnClickListener {
+            val intent=Intent(activity,PastActivity::class.java)
+            startActivity(intent)
+        }
 
     }
 

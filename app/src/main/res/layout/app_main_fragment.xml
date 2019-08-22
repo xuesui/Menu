@@ -14,7 +14,7 @@
             android:layout_height="50dp">
 
         <com.mredrock.cyxbs.freshman.weight.AppShawdowLayout
-                android:layout_width="300dp"
+                android:layout_width="280dp"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
@@ -438,7 +438,7 @@
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
-                            android:id="@+id/main_dousha_card"
+                            android:id="@+id/main_mifen_card"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_marginStart="5dp"
@@ -538,7 +538,7 @@
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
-                            android:id="@+id/main_zhushi_card"
+                            android:id="@+id/main_dousha_card"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_marginStart="5dp"

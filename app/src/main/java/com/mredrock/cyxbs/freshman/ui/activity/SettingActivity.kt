@@ -26,6 +26,7 @@ class SettingActivity : BaseViewModelActivity<SettingActivityViewModel>() {
         viewModel.back(this)
         viewModel.setname(this)
         viewModel.setIntroduce(this)
+
     }
 
     override fun onResume() {
