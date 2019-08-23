@@ -16,6 +16,7 @@ import com.mredrock.cyxbs.freshman.R
 import com.mredrock.cyxbs.freshman.model.MainModel
 import com.mredrock.cyxbs.freshman.model.SearchModel
 import com.mredrock.cyxbs.freshman.ui.activity.DetailActivity
+import com.mredrock.cyxbs.freshman.ui.activity.GrassActivity
 import com.mredrock.cyxbs.freshman.ui.activity.MoreRecommandActivity
 import com.mredrock.cyxbs.freshman.ui.fragment.MainFragment
 import com.mredrock.cyxbs.freshman.utils.MainRecyclerAdapter
@@ -199,5 +200,17 @@ class MainViewModel : BaseViewModel() {
         }
     }
 
+
+    fun toGrass(fragment: MainFragment){
+        fragment.tv_main_recommand.setOnClickListener {
+            val intent=Intent(fragment.context,GrassActivity::class.java)
+            fragment.startActivity(intent)
+        }
+
+        fragment.iv_main_recommand.setOnClickListener {
+            val intent=Intent(fragment.context,GrassActivity::class.java)
+            fragment.startActivity(intent)
+        }
+    }
 
 }

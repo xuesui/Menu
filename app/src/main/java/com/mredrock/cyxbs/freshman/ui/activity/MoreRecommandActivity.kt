@@ -2,6 +2,7 @@ package com.mredrock.cyxbs.freshman.ui.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.MenuItem
 import com.mredrock.cyxbs.common.ui.BaseViewModelActivity
 import com.mredrock.cyxbs.freshman.R
@@ -18,11 +19,16 @@ class MoreRecommandActivity : BaseViewModelActivity<MoreRecommandActivityViewMod
         super.onCreate(savedInstanceState)
         setContentView(R.layout.app_activity_more_recommand)
         val title = intent.extras.getString("title")
+        Log.d("RRR","aa"+title)
         viewModel.initView(this,title)
         if (title=="今日新品"){
             viewModel.initRecyclerView(this)
             iv_more_recommand.setImageDrawable(resources.getDrawable(R.drawable.cake,null))
-        }else{
+        }else if (title=="分类食谱"){
+            val classId=intent.extras.getInt("classId")
+            viewModel.initType(this,classId)
+            iv_more_recommand.setImageDrawable(resources.getDrawable(R.drawable.type,null))
+        } else{
             val food=intent.extras.getString("food")
             val image=intent.extras.getInt("imagepic")
             iv_more_recommand.setImageDrawable(resources.getDrawable(image,null))

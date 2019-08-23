@@ -10,7 +10,7 @@ interface ClassIdService {
     fun getClassId(@Path("path")path:String):Observable<ClassIdEnity>
 
     @GET("recipe/{path}?appkey=7c258c3c1c0ad1e6")
-    fun getByClassId(@Path("path")path: String,@Query("classid")classid:String,@Query("start")strart:Int,
+    fun getByClassId(@Path("path")path: String,@Query("classid")classid:Int,@Query("start")strart:Int,
                      @Query("num")num:Int):Observable<ByClassIdEnity>
 
     @GET("recipe/{path}?appkey=7c258c3c1c0ad1e6")

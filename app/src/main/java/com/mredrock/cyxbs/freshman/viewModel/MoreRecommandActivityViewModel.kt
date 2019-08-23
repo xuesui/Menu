@@ -26,4 +26,8 @@ class MoreRecommandActivityViewModel : BaseViewModel() {
     fun initMore(activity: MoreRecommandActivity,food:String){
         model.more(activity,food)
     }
+
+    fun initType(activity: MoreRecommandActivity,classId:Int){
+        model.initType(activity,classId)
+    }
 }

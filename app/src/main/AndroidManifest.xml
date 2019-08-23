@@ -20,7 +20,9 @@
             android:usesCleartextTraffic="true"
             tools:ignore="AllowBackup,GoogleAppIndexingWarning"
             tools:targetApi="m">
-        <activity android:name=".ui.activity.PastActivity"></activity>
+        <activity android:name=".ui.activity.TypeActivity"></activity>
+        <activity android:name=".ui.activity.GrassActivity" />
+        <activity android:name=".ui.activity.PastActivity" />
         <activity android:name=".ui.activity.MoreRecommandActivity" />
         <activity android:name=".ui.activity.SearchActivity" />
         <activity android:name=".ui.activity.StarActivity" />

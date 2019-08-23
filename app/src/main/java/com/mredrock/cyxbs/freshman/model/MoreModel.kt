@@ -3,6 +3,7 @@ package com.mredrock.cyxbs.freshman.model
 import android.util.Log
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.mredrock.cyxbs.freshman.model.retrofit.ByClassIdEnity
 import com.mredrock.cyxbs.freshman.model.retrofit.ByIdEnity
 import com.mredrock.cyxbs.freshman.model.retrofit.ClassIdService
 import com.mredrock.cyxbs.freshman.model.retrofit.SearchEnity
@@ -103,6 +104,49 @@ class MoreModel {
 
                 }
 
+
+            })
+    }
+
+    fun initType(activity: MoreRecommandActivity,classId:Int){
+        Log.d("YYY","sss")
+        val retrofit = Retrofit.Builder()
+            .baseUrl(BASE_URL)//基础URL 建议以 / 结尾
+            .addConverterFactory(GsonConverterFactory.create())//设置 Json 转换器
+            .addCallAdapterFactory(RxJavaCallAdapterFactory.create())//RxJava 适配器
+            .build()
+        val classIdService = retrofit.create(ClassIdService::class.java)
+
+        val images = ArrayList<String>()
+        val names = ArrayList<String>()
+        val contents = ArrayList<String>()
+
+        classIdService.getByClassId("byclass",classId,0,20)
+            .subscribeOn(Schedulers.io())
+            .observeOn(AndroidSchedulers.mainThread())
+            .subscribe(object :Subscriber<ByClassIdEnity>(){
+                override fun onNext(t: ByClassIdEnity) {
+                    val ids=ArrayList<Int>()
+                    for (i in 0 until t.result.list.size){
+                        images.add(t.result.list[i].pic)
+                        names.add(t.result.list[i].name)
+                        contents.add(t.result.list[i].content)
+                        ids.add(t.result.list[i].id)
+                        Log.d("YYY","ss"+names[i])
+                    }
+                    val adapter = MoreRecyclerAdapter(images, names, contents, ids, activity)
+                    val layoutManager = LinearLayoutManager(activity)
+                    activity.more_recyler.adapter = adapter
+                    activity.more_recyler.layoutManager = layoutManager
+                }
+
+                override fun onCompleted() {
+
+                }
+
+                override fun onError(e: Throwable?) {
+                    Log.d("YYY","ss"+e.toString())
+                }
 
             })
     }

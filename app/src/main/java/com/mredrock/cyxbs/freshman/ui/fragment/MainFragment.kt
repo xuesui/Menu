@@ -52,6 +52,7 @@ class MainFragment : BaseViewModelFragment<MainViewModel>() {
         viewModel.refresh(this)
         viewModel.search(this)
         viewModel.toMoreRecommand(this)
+        viewModel.toGrass(this)
     }
 
 }

@@ -51,7 +51,7 @@ class MainModel : GetModel {
                         R.drawable.juice, R.drawable.dumplin, R.drawable.cookie, R.drawable.tea, R.drawable.crime,
                         R.drawable.tea, R.drawable.frenchfrice, R.drawable.chicken, R.drawable.nudles, R.drawable.sandwich)
 
-                    val adapter= MainRecyclerAdapter(pivtures, names)
+                    val adapter= MainRecyclerAdapter(pivtures, names,fragment.context!!)
                     val layoutManager= LinearLayoutManager(fragment.context)
                     layoutManager.orientation= LinearLayoutManager.HORIZONTAL
                     fragment.recycler_main.adapter=adapter
