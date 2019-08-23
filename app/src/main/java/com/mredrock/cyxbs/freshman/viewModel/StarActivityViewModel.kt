@@ -9,8 +9,9 @@ import com.mredrock.cyxbs.freshman.ui.activity.StarActivity
 class StarActivityViewModel :BaseViewModel(){
     private val model=StarModel()
 
-    fun requestid(activity: StarActivity,id:ArrayList<Int>){
-        model.requestid(activity,id)
+
+    fun requestid(activity: StarActivity,id:ArrayList<Int>,iId:ArrayList<Int>){
+        model.requestid(activity,id,iId)
     }
 
     fun store(id:Int){

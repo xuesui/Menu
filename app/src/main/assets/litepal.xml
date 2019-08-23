@@ -2,7 +2,7 @@
 <litepal>
     <dbname value="stars" />
 
-    <version value="2" />
+    <version value="4" />
 
     <list>
         <mapping class="com.mredrock.cyxbs.freshman.litepal.Star" />

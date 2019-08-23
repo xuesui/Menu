@@ -12,6 +12,7 @@ import org.litepal.crud.DataSupport
 
 class StarActivity : BaseViewModelActivity<StarActivityViewModel>() {
     private val ids = ArrayList<Int>()
+    private val iId=ArrayList<Int>()
     override val viewModelClass: Class<StarActivityViewModel>
         get() = StarActivityViewModel::class.java
     override val isFragmentActivity: Boolean
@@ -27,8 +28,9 @@ class StarActivity : BaseViewModelActivity<StarActivityViewModel>() {
         val stars = DataSupport.findAll(Star::class.java)
         for (i in 0 until stars.size) {
             ids.add(stars[i].which)
+            iId.add(stars[i].id)
         }
-        viewModel.requestid(this, ids)
+        viewModel.requestid(this, ids,iId)
         star_back.setOnClickListener {
             finish()
         }
