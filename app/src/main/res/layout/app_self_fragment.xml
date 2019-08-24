@@ -63,39 +63,6 @@
           android:layout_height="1px"
           android:background="#E9E9E9"/>
 
-    <RelativeLayout android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:layout_marginTop="20dp"
-                    android:id="@+id/rl_self_makeof"
-                    android:background="#FAFAFA">
-
-        <ImageView android:layout_width="30dp"
-                   android:layout_height="30dp"
-                   android:layout_gravity="center_vertical"
-                   android:id="@+id/iv_self_makeof"
-                   android:layout_marginStart="20dp"
-                   android:layout_centerVertical="true"
-                   android:background="@drawable/makeof"/>
-
-        <TextView android:layout_width="wrap_content"
-                  android:layout_height="wrap_content"
-                  android:layout_marginStart="20dp"
-                  android:layout_gravity="center_vertical"
-                  android:textSize="16sp"
-                  android:textColor="#000000"
-                  android:id="@+id/tv_self_makeof"
-                  android:layout_toEndOf="@id/iv_self_makeof"
-                  android:layout_centerVertical="true"
-                  android:text="@string/app_makeof"/>
-
-        <ImageView android:layout_width="15dp"
-                   android:layout_height="15dp"
-                   android:layout_alignParentEnd="true"
-                   android:layout_marginEnd="10dp"
-                   android:layout_centerVertical="true"
-                   android:layout_gravity="center_vertical"
-                   android:background="@drawable/nexxt"/>
-    </RelativeLayout>
 
     <RelativeLayout android:layout_width="match_parent"
                     android:layout_height="50dp"

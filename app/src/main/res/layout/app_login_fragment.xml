@@ -119,24 +119,8 @@
                       android:id="@+id/tv_login_to_logup"
                       android:layout_height="wrap_content"/>
 
-            <TextView android:layout_width="wrap_content"
-                      android:layout_height="wrap_content"
-                      android:layout_below="@id/tv_login_to_logup"
-                      android:layout_marginTop="20dp"
-                      android:layout_toRightOf="@id/iv_melon"
-                      android:layout_marginStart="95dp"
-                      android:textSize="18sp"
-                      android:text="@string/app_or"/>
         </RelativeLayout>
 
-        <TextView android:layout_width="wrap_content"
-                  android:layout_height="wrap_content"
-                  android:textSize="18sp"
-                  android:text="@string/app_login_teleohone"
-                  android:textColor="#0000CD"
-                  android:layout_marginTop="10dp"
-                  android:id="@+id/tv_login_telephone"
-                  android:layout_gravity="center_horizontal"/>
     </LinearLayout>
 
 </LinearLayout>

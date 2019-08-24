@@ -3,7 +3,6 @@ package com.mredrock.cyxbs.freshman.viewModel
 import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Intent
-import android.content.SharedPreferences
 import android.graphics.Color
 import android.text.Editable
 import android.text.TextWatcher
@@ -12,11 +11,8 @@ import android.view.View
 import android.widget.Toast
 import cn.leancloud.AVObject
 import cn.leancloud.AVUser
-import com.mredrock.cyxbs.common.utils.LogUtils
-import com.mredrock.cyxbs.common.utils.extensions.sharedPreferences
 import com.mredrock.cyxbs.common.viewmodel.BaseViewModel
 import com.mredrock.cyxbs.freshman.ui.activity.MainActivity
-import com.mredrock.cyxbs.freshman.ui.activity.TelePhoneActivity
 import com.mredrock.cyxbs.freshman.ui.fragment.LoginFragment
 import io.reactivex.Observer
 import io.reactivex.disposables.Disposable
@@ -24,6 +20,7 @@ import kotlinx.android.synthetic.main.app_activity_login.*
 import kotlinx.android.synthetic.main.app_login_fragment.*
 import kotlinx.android.synthetic.main.app_login_fragment.tv_login_to_logup
 import org.jetbrains.anko.backgroundColor
+import org.litepal.crud.DataSupport
 
 class LoginViewModel : BaseViewModel() {
 
@@ -78,10 +75,7 @@ class LoginViewModel : BaseViewModel() {
             loginFragment.activity!!.shawdow_2.backgroundColor = Color.parseColor("#F5E261")
         }
 
-        loginFragment.tv_login_telephone.setOnClickListener {
-            val intent = Intent(loginFragment.context, TelePhoneActivity::class.java)
-            loginFragment.startActivity(intent)
-        }
+
 
         loginFragment.asv_loghin.setOnClickListener {
             AVUser.logIn(loginFragment.et_account.text.toString(), loginFragment.et_code.text.toString())
@@ -98,7 +92,6 @@ class LoginViewModel : BaseViewModel() {
                         createUserObjectid(loginFragment, t)
                         val intent = Intent(loginFragment.context, MainActivity::class.java)
                         loginFragment.startActivity(intent)
-
                     }
 
                     override fun onError(e: Throwable) {

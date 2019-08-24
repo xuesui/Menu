@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">CyxbsMobile_Freshman</string>
+    <string name="app_name">掌厨</string>
     <string name="app_activity_flash_start">开启掌厨</string>
     <string name="app_sign_up">注册</string>
     <string name="app_log_in">登录</string>
@@ -65,4 +65,7 @@
     <string name="app_s">搜索</string>
     <string name="app_deletepast">清空足迹</string>
     <string name="app_grass">全部场景</string>
+    <string name="app_commulity">我的动态</string>
+    <string name="app_edit">编辑</string>
+    <string name="app_edit_please">请编辑你的内容</string>
 </resources>

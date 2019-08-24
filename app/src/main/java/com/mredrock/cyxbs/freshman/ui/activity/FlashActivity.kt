@@ -42,7 +42,6 @@ class FlashActivity : AppCompatActivity() {
                 } catch (e: Exception) {
                     e.printStackTrace()
                 }
-
             }
         }
         splashThread.start()

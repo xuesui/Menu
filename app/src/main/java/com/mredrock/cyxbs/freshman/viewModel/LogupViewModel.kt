@@ -6,18 +6,14 @@ import android.text.Editable
 import android.text.TextWatcher
 import android.view.View
 import android.widget.Toast
-import androidx.lifecycle.Observer
 import cn.leancloud.AVUser
-import cn.leancloud.utils.LogUtil
 import com.mredrock.cyxbs.common.utils.LogUtils
 import com.mredrock.cyxbs.common.viewmodel.BaseViewModel
-import com.mredrock.cyxbs.freshman.ui.activity.TelePhoneUPActivity
 import com.mredrock.cyxbs.freshman.ui.fragment.LogupFragment
 import io.reactivex.disposables.Disposable
 import kotlinx.android.synthetic.main.app_activity_login.*
 import kotlinx.android.synthetic.main.app_logup_fragment.*
 import org.jetbrains.anko.backgroundColor
-import java.util.*
 
 class LogupViewModel : BaseViewModel() {
 
@@ -92,9 +88,5 @@ class LogupViewModel : BaseViewModel() {
             })
         }
 
-        logupFragment.iv_telephone.setOnClickListener {
-            val intent=Intent(logupFragment.activity,TelePhoneUPActivity::class.java)
-            logupFragment.startActivity(intent)
-        }
     }
 }

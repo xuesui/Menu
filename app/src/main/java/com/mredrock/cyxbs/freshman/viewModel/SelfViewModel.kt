@@ -4,20 +4,14 @@ import android.annotation.SuppressLint
 import android.app.Activity
 import android.content.Context
 import android.content.Intent
-import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import android.provider.MediaStore
-import android.util.Log
-import cn.leancloud.AVObject
-import cn.leancloud.AVQuery
 import com.mredrock.cyxbs.common.viewmodel.BaseViewModel
-import com.mredrock.cyxbs.freshman.R
 import com.mredrock.cyxbs.freshman.ui.activity.LoginActivity
 import com.mredrock.cyxbs.freshman.ui.activity.SettingActivity
 import com.mredrock.cyxbs.freshman.ui.fragment.SelfFragment
-import io.reactivex.Observer
-import io.reactivex.disposables.Disposable
 import kotlinx.android.synthetic.main.app_self_fragment.*
+import org.litepal.crud.DataSupport
 
 @Suppress("RECEIVER_NULLABILITY_MISMATCH_BASED_ON_JAVA_ANNOTATIONS", "NULLABILITY_MISMATCH_BASED_ON_JAVA_ANNOTATIONS")
 class SelfViewModel : BaseViewModel() {
@@ -35,6 +29,7 @@ class SelfViewModel : BaseViewModel() {
 
     fun quitLogin(fragment: SelfFragment) {
         fragment.rl_self_delete.setOnClickListener {
+
             val intent = Intent(fragment.context, LoginActivity::class.java)
             fragment.startActivity(intent)
         }

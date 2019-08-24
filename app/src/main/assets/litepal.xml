@@ -2,10 +2,11 @@
 <litepal>
     <dbname value="stars" />
 
-    <version value="4" />
+    <version value="9" />
 
     <list>
         <mapping class="com.mredrock.cyxbs.freshman.litepal.Star" />
         <mapping class="com.mredrock.cyxbs.freshman.litepal.Past" />
+        <mapping class="com.mredrock.cyxbs.freshman.litepal.Share" />
     </list>
 </litepal>

@@ -99,41 +99,5 @@
                                                         android:id="@+id/asv_loghup"
                                                         android:layout_height="100dp"/>
 
-        <RelativeLayout android:layout_width="match_parent"
-                        android:layout_height="match_parent">
-
-            <TextView android:layout_width="wrap_content"
-                      android:textSize="18sp"
-                      android:text="@string/app_other_logup"
-                      android:layout_marginTop="60dp"
-                      android:layout_marginStart="165dp"
-                      android:id="@+id/tv_login_to_logup"
-                      android:layout_height="wrap_content"/>
-            <ImageView android:layout_width="50dp"
-                       android:layout_height="50dp"
-                       android:layout_marginStart="70dp"
-                       android:layout_marginTop="15dp"
-                       android:id="@+id/iv_weixin"
-                       android:layout_below="@id/tv_login_to_logup"
-                       android:background="@drawable/app_weixin"/>
-
-            <ImageView android:layout_width="50dp"
-                       android:layout_height="50dp"
-                       android:layout_toEndOf="@id/iv_weixin"
-                       android:layout_marginStart="60dp"
-                       android:layout_marginTop="15dp"
-                       android:id="@+id/iv_qq"
-                       android:layout_below="@id/tv_login_to_logup"
-                       android:background="@drawable/app_qq"/>
-
-            <ImageView android:layout_width="50dp"
-                       android:layout_height="50dp"
-                       android:layout_toEndOf="@id/iv_qq"
-                       android:layout_marginStart="60dp"
-                       android:layout_marginTop="15dp"
-                       android:id="@+id/iv_telephone"
-                       android:layout_below="@id/tv_login_to_logup"
-                       android:background="@drawable/telephone"/>
-        </RelativeLayout>
     </LinearLayout>
 </LinearLayout>

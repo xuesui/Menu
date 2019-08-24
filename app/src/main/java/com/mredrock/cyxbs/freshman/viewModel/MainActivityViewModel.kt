@@ -27,7 +27,7 @@ class MainActivityViewModel : BaseViewModel() {
 
         activity.bnb_main
             .addItem(BottomNavigationItem(R.drawable.main, "首页"))
-            .addItem(BottomNavigationItem(R.drawable.commulity, "社区"))
+            .addItem(BottomNavigationItem(R.drawable.commulity, "动态"))
             .addItem(BottomNavigationItem(R.drawable.self, "我的"))
             .setFirstSelectedPosition(lastSelectedPosition)
             .initialise()
