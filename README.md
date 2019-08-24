@@ -41,6 +41,26 @@
 
 （1）登录后的退出再登录问题  
 （2）动态时间设置的是当前的时间，随时会变  
-（3）还有一个留给大姐头慢慢寻找，我的bug都不会闪退，所以都是彩蛋（手动狗头）
+（3）还有一个留给大姐头慢慢寻找，我的bug都不会闪退，所以都是彩蛋（手动狗头）  
+ (4) 接口有地方有点问题，可能有部分东西显示不出来，不过很少
 
 ### 4.展示
+![闪屏页](https://github.com/xuesui/Menu/blob/master/Screenshot_20190824-181111.jpg)
+![首页](https://github.com/xuesui/Menu/blob/master/Screenshot_20190824-181121.jpg)
+![搜索结果](https://github.com/xuesui/Menu/blob/master/Screenshot_20190824-181140.jpg)
+![详情页](https://github.com/xuesui/Menu/blob/master/Screenshot_20190824-181148.jpg)
+![详情页](https://github.com/xuesui/Menu/blob/master/Screenshot_20190824-181204.jpg)
+![分类筛选页](https://github.com/xuesui/Menu/blob/master/Screenshot_20190824-181223.jpg)
+![另一个详情页](https://github.com/xuesui/Menu/blob/master/Screenshot_20190824-181334.jpg)
+![首页](https://github.com/xuesui/Menu/blob/master/Screenshot_20190824-181341.jpg)
+![场景页](https://github.com/xuesui/Menu/blob/master/Screenshot_20190824-181352.jpg)
+![动态页](https://github.com/xuesui/Menu/blob/master/Screenshot_20190824-181400.jpg)
+![动态页](https://github.com/xuesui/Menu/blob/master/Screenshot_20190824-181405.jpg)
+![个人主页](https://github.com/xuesui/Menu/blob/master/Screenshot_20190824-181411.jpg)
+![历史足迹](https://github.com/xuesui/Menu/blob/master/Screenshot_20190824-181417.jpg)
+![个人信息](https://github.com/xuesui/Menu/blob/master/Screenshot_20190824-181426.jpg)
+![编辑名称](https://github.com/xuesui/Menu/blob/master/Screenshot_20190824-181431.jpg)
+![编辑个人介绍](https://github.com/xuesui/Menu/blob/master/Screenshot_20190824-181444.jpg)
+![收藏](https://github.com/xuesui/Menu/blob/master/Screenshot_20190824-181508.jpg)
+![登录](https://github.com/xuesui/Menu/blob/master/Screenshot_20190824-181648.jpg)
+![注册](https://github.com/xuesui/Menu/blob/master/Screenshot_20190824-181652.jpg)
